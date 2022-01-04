@@ -133,12 +133,12 @@ sentiment_model=pickle.load(open('sentiment_model.pkl', 'rb'))
 vec = pickle.load(open("vectorizer.pickle", "rb"))
 #preprocess_text = pickle.load(open("preprocess_text.pkl", "rb"))
 
+@app.route('/home', methods=['GET', 'POST'])
+def home():
+    return render_template('home.html')
+
 @app.route('/index', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
     #Post means info should be stored in database
     #Get means info should be displayed directly to user
         if request.method == 'POST':
@@ -166,9 +166,9 @@ def login():
                 if checkMatch:
                     return render_template("journal.html")
                 else:
-                    return render_template("login.html", info="Login Failure")
+                    return render_template("index.html", info="Login Failure")
         else:
-            return render_template("login.html")
+            return render_template("index.html")
 
 #Import wordcloud
 from wordcloud import WordCloud

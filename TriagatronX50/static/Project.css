@@ -1,0 +1,279 @@
+/*Stylesheet for Homepage and About Page*/
+
+
+/*import google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url("//fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik&display=swap");
+
+/*Styling the body*/
+body{
+	background-image:url("parchment.jpg");
+	background-position:centre;
+	background-repeat: no-repeat;
+	background-color:black;	
+    /* Full height */
+    height: 100%;
+    background-size: cover;
+	}
+
+#instruction{
+	margin-left:40%;
+	margin-right: 40%;
+	margin-top:15%;
+	text-align:center;
+	background-color:lightblue;
+	/*width:21%;*/
+	padding:.5%;
+	}
+
+#usertable{
+	font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+	font-size:90%;
+	color:lightblue;
+	clear:both;
+	border-style:inset;
+	border-width:2%;
+	border-color:lightblue;
+	margin-top:0;
+	margin-left:40%;
+	margin-right:40%;
+	background-color:#f6edd9;
+	padding:2%;
+	}
+
+.fixed-header {
+	position:fixed;
+	top:0%;
+	height:15%;
+	width:100%;
+	padding:1%;
+	margin:0;
+	text-align:center;
+	background:#97AA7D;
+	color:black;
+	font-size:100%;
+	}
+
+#user_input{
+	background-color:#f6edd9;
+	color:black;
+	width:100%;
+    height:100%;
+	display:block;
+	border-style:inset;
+	border-top: 10%;
+	border-width:10%;
+	border-color:lightblue;
+	text-align:left;
+	padding:6%;
+	overflow:auto;
+	margin-bottom: 2%;
+	}
+
+#user_input1{
+	background-color:#f6edd9;
+	color:black;
+	width:45%;
+    height:40%;
+	display:block;
+	border-style:inset;;
+	border-width:10%;
+	border-color:lightblue;
+	text-align:center;
+	padding:6%;
+	overflow:auto;
+	margin-bottom: 2%;
+	margin-left: 27%;
+	margin-right: 27%;
+	}
+
+#journal_entry{
+	background-color:white;
+	color:black;
+	width:100%;
+    height: 150px;
+	display:block;
+	border-style:inset;
+	border-width:5%;
+	border-color:black;
+	text-align:left;
+	margin-bottom:2%;    
+}
+
+#entry_date{
+	background-color:white;
+	color:black;
+	width:60px;
+	border-style:inset;
+	border-width:5%;
+	border-color:black;
+	text-align:left;
+	margin-bottom:2%;    
+}
+
+#journallist{
+	background-color:white;
+	color:black;
+	width:100%;
+    height: 400px;
+	display:block;
+	border-style:inset;
+	border-width:5%;
+	border-top: 10%;
+	border-color:black;
+	text-align:left;
+	overflow:auto;
+	text-overflow: ellipsis;
+	padding: 3%;
+	}
+
+#triagebox{
+	background-color:white;
+	color:black;
+	width:100%;
+    height: 300px;
+	display:block;
+	border-style:inset;
+	border-width:5%;
+	border-color:black;
+	text-align:left;
+	}
+
+
+body{
+	/*background-image:linear-gradient(to right top, #f6bd60, #dece70, #c8db8a, #b8e5a8, #b0ecc6, #b6eac3, #bbe8c1, #c0e6bf, #d1d9a4, #e5c993, #f6b791, #ffa69e);*/
+	/*background-image:linear-gradient(to right top, #9F5D8B, #76FAFF, #08397B, #D64D23, #FCC698, #FEE9D8, #DAA3B8, #80538A);/*to create color gradient*/
+	background-position:centre;
+	background-repeat: no-repeat;/*no interruption*/
+	background-color:white;/*fallback background colour*/
+    height: 100%;/* Full height */
+    background-size: cover;/*full background filled*/
+	}
+
+/*Styling the sliding image*/
+
+.wrapper{/*to hide overflowing content.*/
+	overflow: hidden;
+	}
+
+/*Styling the nav*/
+
+#nav li {
+	/* float: left; floats list items left */
+	display:inline;
+	text-align: center;
+	}
+
+#nav {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	/* #top: 50px; */
+	width: 100%; /*makes the menu width the same as the window width*/
+	/* float: left; floats the list left */
+	height: 13%;
+	margin: 0 0 0 0; /*removes margin*/
+	padding: .5%;
+	margin-bottom:6.5%;
+	list-style: none; /*removes bullets from the list*/
+	background-color: #97AA7D;
+	border-bottom: 1px solid lightblue;
+	border-top: 1px solid lightblue;
+	} 
+
+#nav li a {
+	padding: 8px 50px; /*padding will space them out a bit*/
+	text-decoration: none; /*removes the underline from the anchor*/
+	font-family:"Papyrus";
+	font-size:2vw;
+	color:black;
+	border-right: 1px solid #ccc;
+	margin-top: 2%;
+	}
+
+#nav li a:hover {/*effect when the cursor moves over the list item*/
+	color: #f6edd9;
+	background-color: lightblue;
+	height: 100%;
+	}
+
+/*Styling the content divs*/
+
+#content1{
+	background-color:lightblue;
+	display: block;
+	clear:left;/*clear any floats*/
+	text-align:center;
+	margin-top:12%;
+	margin-bottom:8%;
+	margin-right:20%;
+	margin-left:20%;
+	padding:2%
+	}
+
+#content2{
+	background-color:lightblue;
+	display: block;
+	clear:left;/*clear any floats*/
+	text-align:center;
+	margin-top:4%;
+	margin-bottom:2%;
+	margin-right:2%;
+	margin-left:2%;
+	padding:3.5%;
+	}
+
+#login{
+	align-self: center;
+	margin-left: 14%;
+}
+
+/*Styling the fonts*/
+
+h1 {
+	position: center;
+	font-family:"Papyrus";
+	transform: scale(1, 1.2);
+	font-size: 2vw;
+    color: #3f4a3c;
+	}
+
+h2{
+	text-align:center;
+	font-family:"Papyrus";
+	font-size: 2vw;
+	color:#3f4a3c;	
+	}
+
+h3{
+	text-align:center;
+	font-family:"Papyrus";
+	font-size: 1vw;
+	color:#3f4a3c;	
+	}
+
+p{
+	padding:none;
+	/* text-align:left; */
+	font-family:"Papyrus";
+	font-size: 1vw;
+	color:#3f4a3c;	
+	text-align: left;
+	}
+
+.btn{
+	display: inline-block;
+	padding: 3%;
+	color: #333333;
+	background: #a2af9f;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	transform: scale(1, 1) skew(-5deg, -5deg);/*use transform to slightly rotate the button*/
+	transition: all 400ms ease 0s;
+	box-shadow: 0px 0px 5px 0px white;
+	font-family: "Papyrus";
+	font-size: 1vw;
+	border: 5px #333333;
+	transform: scale(1, 1) skew(0deg, 0deg);
+}

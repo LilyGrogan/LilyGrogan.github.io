@@ -1,0 +1,5 @@
+#config info goes in separate file for extra security
+mysql_host: 'localhost'
+mysql_user: 'root'
+mysql_password: 'Reynolds.1'
+mysql_db: 'pocketpal'

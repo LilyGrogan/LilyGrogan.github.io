@@ -1,0 +1,71 @@
+{% extends 'base.html'%}
+{% block content %}
+        		<!--Fix banner to the top of the webpage-->
+
+		<br><br><br>
+		<!--add container div for content-->
+		<div id="content2" class="container-fluid">
+					<div id=user_input>
+						<!--make db table to hold data-->
+						<table id=journallist>
+							<div class="row justify-content-md-center">	
+								<form action="/insight" method="post">
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<h2>Journal Entries</h2>
+										<h2><input type="submit" value="Full List" class='btn' name="action1"><br>
+										<input type="submit" value="Positive Entries" class='btn' name="action2">
+										<input type="submit" value="Negative Entries" class='btn' name="action3"></h2>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<h2>Word Clouds</h2>
+										<h2><input type="submit" name="submit_button1" value="All Entries" class='btn'><br>
+										<input type="submit" name="submit_button2" value="Positive" class='btn'>
+										<input type="submit" name="submit_button3" value="Neutral" class='btn'>
+										<input type="submit" name="submit_button4" value="Negative" class='btn'></h2>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<h2>Themes</h2></td>
+										<h2><input type="submit" name="submit1" value="Main Themes" class='btn'><br>
+										<input type="submit" name="submit2" value="Topic Distribution" class='btn'></h2>									
+									</div>							
+									<br><br><br>
+									<!-- <th>Date</th>
+									<th>Journal Entry</th>
+									<th>Sentiment</th> -->
+									<!--Jinja for loop to iterate through list of users-->
+									{% for user in journals %}
+										<tr>
+											<!--First index for date-->
+											<td> {{user[0]}} </td>
+											<!--Second index for journal entry-->
+											<td> {{user[1]}} </td> 
+											<!--Third index for journal entry-->
+											<td> {{user[2]}} </td>
+										</tr>
+									<!-- <h2>{{buttonpressed}}</h2> -->									
+									{% endfor %}
+									<tr>
+										<td>
+											{{value}}
+										</td>
+									</tr>
+									<tr>
+										<td>
+											{% for table in tables %}
+											{{titles[loop.index]}}
+											{{ table|safe }}
+											{% endfor %}	
+										</td>
+									</tr>
+								</form>							
+							</div>
+						</table>					
+					</div>
+		</div>		
+
+	<!-- <img src="data:image/png;base64,{{value}}"> -->
+	
+	<!--Import external JS file-->
+	<script src="ExternalJavaScript.js"></script>
+
+{% endblock %}

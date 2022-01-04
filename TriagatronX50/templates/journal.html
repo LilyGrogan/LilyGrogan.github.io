@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+		<!--add container div for content-->
+		<div id=content1>
+			<div class="row">
+				<div class="col-xs-12"><!--Using 5 columns out of 12. Extra small to allow them to retain their position beside eachother in a smaller screen-->
+                    <h2>Make an Entry<br></h2><br>
+                    <table id=user_input>
+                        <form method="POST" action="">
+                            <tr>
+                                <td>
+									<br>
+                                    <p>Date: </p><input type ="text" name="entry_date" id="entry_date">
+                                    <br>
+                                    <p>How was your day... </p><textarea id="journal_entry" type="text" name="journal_entry" cols=100%></textarea> 
+                                    <!--<input type ="text" complaint="complaint" style="width:500px" >>-->
+                                    <input type="submit" value="Enter" class="btn">
+                                </td>
+                            </tr>
+                        </form>
+                     </table>
+				</div>
+			</div>
+		</div>
+	
+		<!--Import external JS file-->
+		<script src="ExternalJavaScript.js"></script>
+
+{% endblock %}
